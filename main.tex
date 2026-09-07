@@ -1,0 +1,118 @@
+% APA 7th Edition Dissertation Template in LaTeX
+\documentclass[12pt,oneside]{book}
+\usepackage[margin=1in]{geometry}
+\usepackage{setspace}
+\usepackage{times}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{threeparttable}
+\usepackage{hyperref}
+\usepackage{apacite}
+\usepackage[comma,numbers,sort&compress]{natbib}
+\usepackage{fancyhdr}
+\usepackage{longtable}
+\usepackage{float}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{url}
+\usepackage{pdfpages}
+
+% APA 7th Edition formatting
+\doublespacing
+\setlength{\parindent}{0.5in}
+\renewcommand{\baselinestretch}{2}
+
+% Page numbering
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\thepage}
+\lhead{}
+\cfoot{}
+
+% Hyperlink colors
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    citecolor=black,
+    urlcolor=black,
+    pdftitle={Your Dissertation Title},
+    pdfauthor={Your Name}
+}
+
+% Line numbering option (comment out if not needed)
+% \usepackage{lineno}
+% \linenumbers
+
+% Title Page Information
+\newcommand{\dissertationtitle}{Your Dissertation Title}
+\newcommand{\authorname}{Your Name}
+\newcommand{\degreeawarded}{Doctor of Philosophy}
+\newcommand{\universityname}{Your University Name}
+\newcommand{\dissertationyear}{2026}
+\newcommand{\departmentname}{Your Department Name}
+\newcommand{\chairname}{Dr. Chair Name}
+\newcommand{\committeemembertwo}{Dr. Committee Member 2}
+\newcommand{\committeememberthree}{Dr. Committee Member 3}
+
+\begin{document}
+
+% Front Matter
+\frontmatter
+\pagenumbering{roman}
+
+% Title Page
+\include{frontmatter/titlepage}
+
+% Copyright Page (optional)
+\include{frontmatter/copyright}
+
+% Approval Page
+\include{frontmatter/approval}
+
+% Dedication (optional)
+\include{frontmatter/dedication}
+
+% Acknowledgments
+\include{frontmatter/acknowledgments}
+
+% Abstract
+\include{frontmatter/abstract}
+
+% Table of Contents
+\tableofcontents
+\clearpage
+
+% List of Tables
+\listoftables
+\clearpage
+
+% List of Figures
+\listoffigures
+\clearpage
+
+% Main Matter
+\mainmatter
+\pagenumbering{arabic}
+
+% Chapters
+\include{chapters/chapter1}
+\include{chapters/chapter2}
+\include{chapters/chapter3}
+\include{chapters/chapter4}
+\include{chapters/chapter5}
+
+% References
+\bibliographystyle{apacite}
+\bibliography{references/references}
+\clearpage
+
+% Appendices (if needed)
+% \appendix
+% \include{appendices/appendixA}
+% \include{appendices/appendixB}
+
+\end{document}
