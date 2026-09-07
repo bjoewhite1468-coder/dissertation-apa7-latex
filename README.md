@@ -10,8 +10,8 @@ A comprehensive LaTeX template for dissertations formatted according to APA 7th 
 - ✅ Times New Roman font (12pt)
 - ✅ Automatic page numbering and headers
 - ✅ Table of Contents, List of Tables, List of Figures
-- ✅ Front matter pages (title page, approval, abstract, acknowledgments)
-- ✅ Chapter structure (5 sample chapters)
+- ✅ Complete front matter (title page, approval, abstract, acknowledgments, prefatory materials)
+- ✅ Six-chapter structure
 - ✅ APA-formatted bibliography
 - ✅ Support for citations, tables, figures, and equations
 
@@ -26,18 +26,48 @@ A comprehensive LaTeX template for dissertations formatted according to APA 7th 
 │   ├── copyright.tex               # Copyright page (optional)
 │   ├── dedication.tex              # Dedication (optional)
 │   ├── acknowledgments.tex         # Acknowledgments
+│   ├── pretext.tex                 # Pre-text (optional)
+│   ├── prefatory_note.tex          # Prefatory Note (optional)
+│   ├── preface.tex                 # Preface (optional)
+│   ├── prologue.tex                # Prologue (optional)
 │   └── abstract.tex                # Abstract
 ├── chapters/
 │   ├── chapter1.tex                # Introduction
 │   ├── chapter2.tex                # Literature Review
 │   ├── chapter3.tex                # Methodology
 │   ├── chapter4.tex                # Results
-│   └── chapter5.tex                # Discussion & Conclusion
+│   ├── chapter5.tex                # Discussion & Conclusion
+│   └── chapter6.tex                # Conclusions and Recommendations
 ├── references/
 │   └── references.bib              # Bibliography in BibTeX format
 ├── appendices/                      # Optional appendices
 └── README.md                        # This file
 ```
+
+## Front Matter Organization
+
+Your dissertation includes comprehensive prefatory materials:
+
+1. **Title Page** - Standard dissertation title page with author, institution, and date
+2. **Copyright Page** - Optional copyright statement
+3. **Approval Page** - Signature page for dissertation committee
+4. **Dedication** - Optional personal dedication
+5. **Acknowledgments** - Thank those who supported your research
+6. **Pre-text** - Optional introductory material and context
+7. **Prefatory Note** - Optional disclaimers, permissions, or important notes
+8. **Preface** - Optional personal introduction to your work
+9. **Prologue** - Optional thematic or narrative introduction
+10. **Abstract** - Required summary of your dissertation
+11. **Table of Contents**, **List of Tables**, **List of Figures** - Auto-generated
+
+## Six-Chapter Structure
+
+1. **Chapter 1** - Introduction
+2. **Chapter 2** - Literature Review
+3. **Chapter 3** - Methodology
+4. **Chapter 4** - Results
+5. **Chapter 5** - Discussion and Conclusion
+6. **Chapter 6** - Conclusions and Recommendations
 
 ## Getting Started
 
@@ -88,6 +118,16 @@ Edit these commands in `main.tex`:
 1. Create a new `.tex` file in the `chapters/` directory
 2. Add `\include{chapters/chapterX}` in `main.tex`
 
+### Optional Prefatory Materials
+
+To use the optional prefatory sections, simply uncomment or modify the corresponding files:
+- `frontmatter/pretext.tex` - Pre-text
+- `frontmatter/prefatory_note.tex` - Prefatory Note
+- `frontmatter/preface.tex` - Preface
+- `frontmatter/prologue.tex` - Prologue
+
+To exclude them, comment out or remove the `\include` lines in `main.tex`.
+
 ### Adding References
 
 1. Add your citations to `references/references.bib` in BibTeX format
@@ -127,6 +167,7 @@ Edit these commands in `main.tex`:
 - ✅ Proper heading hierarchy
 - ✅ APA citation style
 - ✅ Proper table and figure formatting
+- ✅ Comprehensive front matter
 
 ## Tips
 
@@ -135,6 +176,7 @@ Edit these commands in `main.tex`:
 - **Backup your work**: Use version control (Git) to track changes
 - **Compile frequently**: Check for errors as you write
 - **Line numbering**: Uncomment the `lineno` package in `main.tex` if your institution requires line numbers
+- **Prefatory materials**: Use only the sections your institution requires
 
 ## Troubleshooting
 
@@ -146,6 +188,9 @@ Edit these commands in `main.tex`:
 
 **Issue**: Formatting doesn't match APA style
 - **Solution**: Verify that all packages are loaded and commands are correctly used
+
+**Issue**: Page numbers not appearing
+- **Solution**: Ensure `\pagestyle{fancy}` is set before `\begin{document}`
 
 ## Resources
 
