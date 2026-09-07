@@ -36,7 +36,7 @@ A comprehensive LaTeX template for dissertations formatted according to APA 7th 
 │   ├── chapter2.tex                # Literature Review
 │   ├── chapter3.tex                # Methodology
 │   ├── chapter4.tex                # Results
-│   ├── chapter5.tex                # Discussion & Conclusion
+│   ├── chapter5.tex                # Discussion and Conclusion
 │   └── chapter6.tex                # Conclusions and Recommendations
 ├── references/
 │   └── references.bib              # Bibliography in BibTeX format
@@ -62,12 +62,12 @@ Your dissertation includes comprehensive prefatory materials:
 
 ## Six-Chapter Structure
 
-1. **Chapter 1** - Introduction
-2. **Chapter 2** - Literature Review
-3. **Chapter 3** - Methodology
-4. **Chapter 4** - Results
-5. **Chapter 5** - Discussion and Conclusion
-6. **Chapter 6** - Conclusions and Recommendations
+1. **Chapter 1: Introduction** - Background, problem statement, research questions, significance, and organization
+2. **Chapter 2: Literature Review** - Theoretical frameworks, previous research, gaps, and conceptual model
+3. **Chapter 3: Methodology** - Research design, setting, participants, data collection, analysis, and ethical considerations
+4. **Chapter 4: Results** - Overview, findings by research question, quantitative/qualitative results, and summary
+5. **Chapter 5: Discussion and Conclusion** - Interpretation of findings, theoretical/practical implications, limitations, recommendations, and conclusions
+6. **Chapter 6: Conclusions and Recommendations** - Summary of findings, contributions, limitations, recommendations for practice/policy/future research, and final reflections
 
 ## Getting Started
 
